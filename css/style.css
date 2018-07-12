@@ -1,0 +1,123 @@
+body {
+    background: #ffffff;
+}
+
+/* CONTAINER */
+.top-header, .menu-header__wrapper {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+/* TOP HEADER */
+
+.top-header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    min-height: 50px;
+
+    background: #FBFBFB;
+    border-bottom: 2px solid #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px; 
+    color: #646464;
+}
+
+.top-header__address {
+    flex: 1;
+}
+
+.top-header__icon {
+    padding: 0 3px;
+    color: #333;
+    font-size: 15px;
+}
+
+.top-header__context {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.top-header__phone{
+    flex: 2;
+    padding-left: 5px;
+    border-left: 1px solid #E6E5E5;
+}
+
+.top-header__social-media a{
+    padding: 0 5px;
+    color: #646464;
+    transition: all ease 0.5s;
+}
+
+.top-header__social-media a:hover {
+    color: #43a906;
+   
+}
+.top-header__social-media i {
+    font-weight: 700;
+}
+
+/* MENU HEADER */
+
+.menu-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    /* background: #deabb4; */
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #3D3E3D;
+}
+
+.navigation__wrap {
+    display: flex;
+}
+
+.navigation__link {
+    margin-top: 30px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navigation__link a{
+    padding: 0 13px;
+    color: #393939;
+    transition: .2s;
+}
+
+.navigation__link:hover:after, .navigation__wrap .navigation__link_active:after {
+    width: 100%;
+    background: #4DA91C;
+    margin-top: 27px;
+    
+}
+.navigation__link a:hover,
+ .navigation__link_active a {
+    color: #4DA91C;
+}
+.navigation__link:after {
+    content: '';
+    display: block;
+    margin:  auto;    
+    margin-top: 27px;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;   
+}
+
+
+.navigation__link_margin-none {
+    padding-right: 0;
+}
+
+
+
