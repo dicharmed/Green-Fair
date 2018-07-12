@@ -73,6 +73,7 @@ body {
     border-bottom: 1px solid #3D3E3D;
 }
 
+
 .navigation__wrap {
     display: flex;
 }
@@ -113,11 +114,57 @@ body {
     background: transparent;
     transition: width .5s ease, background-color .5s ease;   
 }
-
-
 .navigation__link_margin-none {
     padding-right: 0;
 }
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    /* TOGGLE */
+    #navigation {
+        display: none;
+        transition: 0.5s;
+    }
+    
+    .toggle-btn {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .toggle-btn:hover {
+        background-color: #ddd;
+    }
+
+    .toggle-btn__element:after {
+        content: "\2261";
+        font-size: 40px;
+        color: #888;
+        line-height: 14px;
+        display: block;
+        padding: 10px 11px;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 43px;
+        left: 0;
+        right: 0;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .nav-toggle .navigation__wrap {
+        display: block;
+    }
+
+}
+
 
 
 
