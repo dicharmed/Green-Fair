@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 800px) {
     /* TOGGLE */
-    #navigation {
+    .navigation {
         display: none;
         transition: 0.5s;
     }

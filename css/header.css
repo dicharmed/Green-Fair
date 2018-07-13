@@ -49,17 +49,15 @@
 }
 
 /* MENU HEADER */
+.menu-header {
+		position: sticky;
+		top: 0;
+}
 
 .menu-header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: fixed;
-    /* background: #deabb4; */
-    /* top: 0; */
-    left: 0;
-    right: 0;
     border-bottom: 1px solid #3D3E3D;
 }
 
