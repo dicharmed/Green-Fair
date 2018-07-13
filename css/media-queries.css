@@ -1,0 +1,55 @@
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1050px) {
+    
+    .navigation__link {
+        font-size: 13px;
+    }
+
+    .navigation__link a {
+        padding: 0 6px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* TOGGLE */
+    #navigation {
+        display: none;
+        transition: 0.5s;
+    }
+    
+    .toggle-btn {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .toggle-btn:hover {
+        background-color: #ddd;
+    }
+
+    .toggle-btn__element:after {
+        content: "\2261";
+        font-size: 40px;
+        color: #888;
+        line-height: 14px;
+        display: block;
+        padding: 10px 11px;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 43px;
+        left: 0;
+        right: 0;
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    .nav-toggle .navigation__wrap {
+        display: block;
+    }
+
+}
